@@ -92,6 +92,10 @@ def score_calculation(n_nearest_neighbors, file_index_to_product_id, file_index_
   named_nearest_neighbors = []
   final_dict = {}
 
+  # Viene fatto un +2 perché rispetto al numero di nn che vogliamo, 
+  # uno è rappresentato dalla query e uno dal prodotto prodotto più simile alla query al 100% (la query stessa)
+  n_nearest_neighbors = n_nearest_neighbors + 2
+
   last_index = list(file_index_to_product_id.keys())[-1]
   nearest_neighbors = t.get_nns_by_item(last_index, n_nearest_neighbors)
   
