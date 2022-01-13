@@ -23,8 +23,6 @@ L’archivio contiene:
 
 Per eseguire il tutto, basterà eseguire lo script “main.py” o da riga di comando o con l’editor che si desidera.
 
-All’interno del file “main.py” sono anche specificate tutte le variabili d’ambiente necessarie per eseguire il codice. NON c’è bisogno di cambiare niente, neanche i path perché sono relativi.
-
 
 Se si volessero fare ulteriori query al sistema di raccomandazione, ho creato una funzione ad hoc. Per utilizzarla basterà:
 
@@ -35,6 +33,12 @@ Come query si può utilizzare qualsiasi file .npz nella cartella “feature_vect
 
 
 
+(In ogni caso, NON consiglio l'esecuzione in locale per via delle lunghe tempistiche (CPU vs GPU). All'interno della relazione ho linkato un notebook Kaggle già compilato su cui poter fare delle query. Per eseguirle basterà modificare le stesse informazioni che ho spiegato poc'anzi)
 
 
-Il dataset è stato volutamente consegnato in forma ridotta, sia perché si ritene che funzioni comunque bene con 1000 esempi del nostro indice, sia perché eseguendo localmente su singola CPU, per l’intero dataset ci sarebbe voluto molto tempo (eseguendo in Cloud con molteplici GPU il tempo diventa invece sostenibile)
+All’interno del file “main.py” sono anche specificate tutte le variabili d’ambiente necessarie per eseguire il codice. NON c’è bisogno di cambiare niente, neanche i path perché sono relativi.
+
+
+
+
+Il dataset è stato volutamente consegnato in forma ridotta, sia perché si ritene che funzioni comunque bene con 1000 esempi del nostro indice, sia perché se si volesse eseguire localmente su singola CPU, per l’intero dataset ci sarebbe voluto molto tempo (eseguendo in Cloud con molteplici GPU il tempo diventa invece sostenibile)
